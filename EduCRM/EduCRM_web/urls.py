@@ -31,5 +31,6 @@ urlpatterns = [
     path('parents_login/', parents.Parents_Login),
     path('sadmin/teacher_login/', user_manage.Teacher_Login),
     path('', parents.index),
-    path('logout/', parents.logout)
+    path('logout/', parents.logout),
+
 ]
