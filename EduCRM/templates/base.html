@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -14,20 +15,20 @@
 <![endif]-->
 
 		<!-- Fav and touch icons -->
-		<link rel="shortcut icon" href="../../static/assets/ico/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/static/assets/ico/favicon.ico" type="image/x-icon" />
 
 	    <!-- Css files -->
-	    <link href="../../static/assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="../../static/assets/css/jquery.mmenu.css" rel="stylesheet">
-		<link href="../../static/assets/css/font-awesome.min.css" rel="stylesheet">
-		<link href="../../static/assets/css/climacons-font.css" rel="stylesheet">
-		<link href="../../static/assets/plugins/xcharts/css/xcharts.min.css" rel=" stylesheet">
-		<link href="../../static/assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet">
-		<link href="../../static/assets/plugins/morris/css/morris.css" rel="stylesheet">
-		<link href="../../static/assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
-		<link href="../../static/assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
-	    <link href="../../static/assets/css/style.min.css" rel="stylesheet">
-		<link href="../../static/assets/css/add-ons.min.css" rel="stylesheet">
+	    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/static/assets/css/jquery.mmenu.css" rel="stylesheet">
+		<link href="/static/assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="/static/assets/css/climacons-font.css" rel="stylesheet">
+		<link href="/static/assets/plugins/xcharts/css/xcharts.min.css" rel=" stylesheet">
+		<link href="/static/assets/plugins/fullcalendar/css/fullcalendar.css" rel="stylesheet">
+		<link href="/static/assets/plugins/morris/css/morris.css" rel="stylesheet">
+		<link href="/static/assets/plugins/jquery-ui/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+		<link href="/static/assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+	    <link href="/static/assets/css/style.min.css" rel="stylesheet">
+		<link href="/static/assets/css/add-ons.min.css" rel="stylesheet">
 
 	    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -35,7 +36,7 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-</head>
+
 
 <body>
 	<!-- start: Header -->
@@ -57,19 +58,20 @@
 	<!-- end: Header -->
 
 	<div class="container-fluid content">
+		    <div class="row">
 
-		<div class="row">
 
 			<!-- start: Main Menu -->
 			<div class="sidebar ">
 
 				<div class="sidebar-collapse">
 					<div class="sidebar-header t-center">
-                        <span><img class="text-logo" src="../../static/assets/img/logo1.png"><i class="fa fa-space-shuttle fa-3x blue"></i></span>
+                        <span><img class="text-logo" src="/static/assets/img/logo1.png"><i class="fa fa-space-shuttle fa-3x blue"></i></span>
                     </div>
 					<div class="sidebar-menu">
 						<ul class="nav nav-sidebar">
-							<li>
+z
+                            <li>
 								<a href="#"><i class="fa fa-list-alt"></i><span class="text"> 用户管理</span> <span class="fa fa-angle-down pull-right"></span></a>
 								<ul class="nav sub">
 									<li><a href="index.html"><i class="fa fa-laptop"></i><span class="text"> 老师管理</span></a></li>
@@ -77,6 +79,7 @@
 									<li><a href="parents.html"><i class="fa fa-laptop"></i><span class="text"> 家长管理</span></a></li>
 								</ul>
 							</li>
+
 							<li>
 								<a href="#"><i class="fa fa-list-alt"></i><span class="text"> 统计</span> <span class="fa fa-angle-down pull-right"></span></a>
 								<ul class="nav sub">
@@ -88,6 +91,7 @@
 							</li>
 							<li><a href="result_query.html"><i class="fa fa-table"></i><span class="text"> 成绩查询</span></a></li>
 							<li><a href="multiple.html"><i class="fa fa-life-bouy"></i><span class="text"> 综合技能报表</span></a></li>
+
 							<li>
 								<a href="#"><i class="fa fa-bolt"></i><span class="text"> 信息模块</span> <span class="fa fa-angle-down pull-right"></span></a>
 								<ul class="nav sub">
@@ -128,43 +132,17 @@
 					<h3 class="page-header"><i class="fa fa-retweet"></i>教育平台</h3>
 					<ol class="breadcrumb">
 						<li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-						<li><i class="fa fa-signal"></i><a href="#">信息模块</a></li>
-						<li><i class="fa fa-signal"></i><a href="#">信息发布</a></li>
+						<li><i class="fa fa-signal"></i><a href="#">穿过来</a></li>
 					</ol>
 				</div>
 			</div>
 			<div class="row">
-                发布
+                {% block content %}
+                这里是内容哈哈哈哈
+                {% endblock %}
 			</div><!--/.row-->
-            <form action method="post" enctype="multipart/form-data" class="form-horizontal ">
-            <div class="form-group">
-                <div>
-                    <label class="col-md-3 control-label" for="text-input">标题：</label>
-                </div>
-                <div class="col-md-9">
-                    <input type="text" id="text-input" name="text-input" class="form-control" placeholder="请输入标题">
-                </div>
-                <br><br><br>
-                <div class="form-group" style="text-align: center;">
-                    <div>
-                        <label class="col-md-3 control-label" for="textarea-input">内容：</label>
-                    </div>
-                    <div class="col-md-9">
-                        <textarea id="textarea-input" name="textarea-input" rows="9" class="form-control" placeholder="请输入内容..."></textarea>
-                    </div>
 
-                    <div class="panel-footer">
 
-                        <button type="submit" class="btn btn-sm btn-success">
-                            发布
-                        </button>
-                        &nbsp;&nbsp;&nbsp;
-
-                        <button type="reset" class="btn btn-sm btn-danger">
-                            重置
-                        </button>
-                    </div>
-            </div>
 
 		</div>
 		<!-- end: Content -->
@@ -175,7 +153,7 @@
 
 	</div><!--/container-->
 
-
+        </div>
 	<div class="modal fade" id="myModal">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -200,7 +178,7 @@
 	<!-- start: JavaScript-->
 	<!--[if !IE]>-->
 
-			<script src="../../static/assets/js/jquery-2.1.1.min.js"></script>
+			<script src="/static/assets/js/jquery-2.1.1.min.js"></script>
 
 	<!--<![endif]-->
 
@@ -225,45 +203,45 @@
 		</script>
 
 	<![endif]-->
-	<script src="../../static/assets/js/jquery-migrate-1.2.1.min.js"></script>
-	<script src="../../static/assets/js/bootstrap.min.js"></script>
+	<script src="/static/assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="/static/assets/js/bootstrap.min.js"></script>
 
 
 	<!-- page scripts -->
-	<script src="../../static/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
-	<script src="../../static/assets/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
-	<script src="../../static/assets/plugins/moment/moment.min.js"></script>
-	<script src="../../static/assets/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+	<script src="/static/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js"></script>
+	<script src="/static/assets/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+	<script src="/static/assets/plugins/moment/moment.min.js"></script>
+	<script src="/static/assets/plugins/fullcalendar/js/fullcalendar.min.js"></script>
 	<!--[if lte IE 8]>
 		<script language="javascript" type="text/javascript" src="assets/plugins/excanvas/excanvas.min.js"></script>
 	<![endif]-->
-	<script src="../../static/assets/plugins/flot/jquery.flot.min.js"></script>
-	<script src="../../static/assets/plugins/flot/jquery.flot.pie.min.js"></script>
-	<script src="../../static/assets/plugins/flot/jquery.flot.stack.min.js"></script>
-	<script src="../../static/assets/plugins/flot/jquery.flot.resize.min.js"></script>
-	<script src="../../static/assets/plugins/flot/jquery.flot.time.min.js"></script>
-	<script src="../../static/assets/plugins/flot/jquery.flot.spline.min.js"></script>
-	<script src="../../static/assets/plugins/xcharts/js/xcharts.min.js"></script>
-	<script src="../../static/assets/plugins/autosize/jquery.autosize.min.js"></script>
-	<script src="../../static/assets/plugins/placeholder/jquery.placeholder.min.js"></script>
-	<script src="../../static/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
-	<script src="../../static/assets/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
-	<script src="../../static/assets/plugins/raphael/raphael.min.js"></script>
-	<script src="../../static/assets/plugins/morris/js/morris.min.js"></script>
-	<script src="../../static/assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
-	<script src="../../static/assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="../../static/assets/plugins/jvectormap/js/gdp-data.js"></script>
-	<script src="../../static/assets/plugins/gauge/gauge.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.pie.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.stack.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.resize.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.time.min.js"></script>
+	<script src="/static/assets/plugins/flot/jquery.flot.spline.min.js"></script>
+	<script src="/static/assets/plugins/xcharts/js/xcharts.min.js"></script>
+	<script src="/static/assets/plugins/autosize/jquery.autosize.min.js"></script>
+	<script src="/static/assets/plugins/placeholder/jquery.placeholder.min.js"></script>
+	<script src="/static/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+	<script src="/static/assets/plugins/datatables/js/dataTables.bootstrap.min.js"></script>
+	<script src="/static/assets/plugins/raphael/raphael.min.js"></script>
+	<script src="/static/assets/plugins/morris/js/morris.min.js"></script>
+	<script src="/static/assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="/static/assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="/static/assets/plugins/jvectormap/js/gdp-data.js"></script>
+	<script src="/static/assets/plugins/gauge/gauge.min.js"></script>
 
 
 	<!-- theme scripts -->
-	<script src="../../static/assets/js/SmoothScroll.js"></script>
-	<script src="../../static/assets/js/jquery.mmenu.min.js"></script>
-	<script src="../../static/assets/js/core.min.js"></script>
-	<script src="../../static/assets/plugins/d3/d3.min.js"></script>
+	<script src="/static/assets/js/SmoothScroll.js"></script>
+	<script src="/static/assets/js/jquery.mmenu.min.js"></script>
+	<script src="/static/assets/js/core.min.js"></script>
+	<script src="/static/assets/plugins/d3/d3.min.js"></script>
 
 	<!-- inline scripts related to this page -->
-	<script src="../../static/assets/js/pages/index.js"></script>
+	<script src="/static/assets/js/pages/index.js"></script>
 
 	<!-- end: JavaScript-->
 </div>

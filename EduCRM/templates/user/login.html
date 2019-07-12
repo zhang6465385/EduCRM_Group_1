@@ -37,11 +37,11 @@ $(document).ready(function() {
   <em>Management System</em>
  </dt>
  <dd class="user_icon">
-  <input name="user_name" type="text" placeholder="账号" class="login_txtbx"/>
+  <input name="username" type="text" placeholder="账号" class="login_txtbx"/>
  </dd>
        <span>
-        {% if error_data.user_name.error%}
-       <center><p style="color: yellow;"><font size="5">{{ error_data.user_name.error }}</font></p></center>
+        {% if error_data.username.error%}
+       <center><p style="color: yellow;"><font size="5">{{ error_data.username.error }}</font></p></center>
     {% endif %}
   </span>
  <dd class="pwd_icon">
