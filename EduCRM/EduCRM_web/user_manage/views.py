@@ -29,7 +29,7 @@ def Teacher_Login(request):
             if u:
                 if password == u.password:
                     request.session["t_id"] = u.id
-                    return redirect("/index/")
+                    return redirect("/sadmin/")
                 else:
                     error_data["password"] = {"error":"密码错误"}
             else:
