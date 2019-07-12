@@ -3,7 +3,7 @@ from django.shortcuts import render,redirect
 # Create your views here.
 from EduCRM_web.models import *
 import re
-def index(request):
+def is_login(request):
     user_id = request.session.get('t_id')
     if not user_id:
         return redirect('/sadmin/teacher_login/')
@@ -33,5 +33,5 @@ def Teacher_Login(request):
                 else:
                     error_data["password"] = {"error":"密码错误"}
             else:
-                error_data["work_number"] = {"error": "此学号未存在"}
+                error_data["work_number"] = {"error": "此工号未存在"}
         return render(request,"sadmin/page_login.html",locals())
